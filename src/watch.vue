@@ -75,6 +75,18 @@
       }, 3000)
 
 
+      {
+        // 不能监听非响应式的值
+        let age = 0;
+        setTimeout(() => {
+          age++;
+          console.log("改变值", age);
+
+        }, 1000);
+        watch(() => age, () => {
+          console.log("asdas");
+        })
+      }
     }
 
   }
