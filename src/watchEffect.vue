@@ -16,6 +16,21 @@ export default {
     });
     // 停止监听
     stop();
+
+
+
+    {
+      // 不能监听非响应式的值
+      let age = 0;
+      setTimeout(() => {
+        age++;
+        console.log("改变值", age);
+
+      }, 1000);
+      watchEffect(() => age, () => {
+        console.log("asdas");
+      })
+    }
   }
 }
 </script>
