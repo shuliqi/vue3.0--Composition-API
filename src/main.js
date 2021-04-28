@@ -6,6 +6,7 @@ import { createApp } from 'vue'
 // import App from './isRef.vue'
 // import App from './toRefs.vue'
 // import App from './watch.vue';
-import App from './watchEffect.vue';
+// import App from './watchEffect.vue';
 // import App from "./computed";
+import App from "./readonly";
 createApp(App).mount('#app')
